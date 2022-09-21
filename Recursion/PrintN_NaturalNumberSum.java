@@ -1,6 +1,6 @@
 package Recursion;
 
-public class PrintN_NaturalNumber {
+public class PrintN_NaturalNumberSum {
 
     public static void printSum(int i, int n, int sum){
         if(i == n){
