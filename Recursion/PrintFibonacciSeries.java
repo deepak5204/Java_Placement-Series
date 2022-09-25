@@ -2,6 +2,7 @@ package Recursion;
 
 public class PrintFibonacciSeries {
 
+    //print fibonacci series here n1 is first term and n2 is second term
     public static void printFibSeries(int n, int n1, int n2){
         if(n == 0){
             return;
