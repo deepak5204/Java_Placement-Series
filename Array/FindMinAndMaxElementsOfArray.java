@@ -5,8 +5,8 @@ public class FindMinAndMaxElementsOfArray {
     public static void main(String[] args){
         int[] arr = {3,5,7,9,6,-1,8,11,-23};
 
-        int min = arr[0];
-        int max = arr[0];
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
 
 
         for(int i = 1; i < arr.length; i++){
