@@ -4,17 +4,21 @@ public class QuickSort {
 
     public static int partition(int[] arr, int si, int ei){
         int pivotElement = arr[si];
-        int smallNumCount =0;
-        for(int i = si; i<= ei; i++){
+        int smallNumCount =0; 
+
+        // count number of element less than pivot element
+        for(int i = si; i <= ei; i++){
             if(arr[i] < pivotElement){
                 smallNumCount++;
             }
         }
 
+        //swap pivot element to its correct position
         int temp = arr[si + smallNumCount];
         arr[si + smallNumCount] = pivotElement;
         arr[si] = temp;
 
+        // move small element before pivot element and large after pivot element
         int i = si;
         int j = ei;
         while(i < j){
