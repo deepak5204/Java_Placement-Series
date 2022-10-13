@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-public class Push_0_to_end {
+public class Push_0_to_end{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -13,6 +13,7 @@ public class Push_0_to_end {
         for(int i = 0; i < 5; i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
 
         int [] newArr = new int[arr.length];
         int si = 0; 
