@@ -8,6 +8,7 @@ public class SelectionSort {
         for(int i = 0; i < 5; i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
 
       for(int p = 0; p < 5; p++){
           //find minimum element 

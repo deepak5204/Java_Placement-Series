@@ -13,6 +13,7 @@ public class BubbleSort {
         for(int i = 0; i < 5; i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
 
         //bubble sort 
         for(int i = 0; i < 5; i++){
