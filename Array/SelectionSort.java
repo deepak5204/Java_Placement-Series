@@ -22,9 +22,9 @@ public class SelectionSort {
           }
   
           //swap min value with first value of each iteration
-          int temp = arr[min];
-          arr[min] = arr[i];
-          arr[i] = temp;
+          int temp = arr[i];
+          arr[i] = arr[min];
+          arr[min] = temp;
       }
 
     //print array
