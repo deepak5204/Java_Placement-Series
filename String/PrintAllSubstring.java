@@ -9,6 +9,7 @@ public class PrintAllSubstring {
 
         System.out.println("Enter string");
         String str = s.next();
+        s.close();
         for(int i = 0; i <= str.length(); i++){
             System.out.println(str.substring(i));
         }
