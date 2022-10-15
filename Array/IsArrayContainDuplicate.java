@@ -5,16 +5,16 @@ import java.util.Scanner;
 
 public class IsArrayContainDuplicate {
 
-    //check array contain duplicate or not if array contain duplicate return false otherwise return true
+    //check array contain duplicate or not, if array contain duplicate return true otherwise return false
     public static boolean arrConDuplicate(int[] arr){
         for(int i = 0; i < arr.length; i++){
             for(int j = i + 1; j < arr.length; j++){
                 if(arr[i] == arr[j]){
-                    return false;
+                    return true;
                 }
             }
         }
-        return true;
+        return false;
     }
    public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
