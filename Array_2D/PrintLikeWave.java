@@ -19,7 +19,7 @@ public class PrintLikeWave {
         }
         sc.close();
 
-        //print like wave(i.e 1st column top to bottom, 2nd column bottom to top)
+        //print like wave(i.e 1st column top to bottom, 2nd column bottom to top and so on)
 
         for(int j = 0; j < m; j++){
             if(j % 2 == 0){
