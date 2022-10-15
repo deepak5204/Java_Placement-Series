@@ -21,13 +21,13 @@ public class PrintSpiral {
       if(matrix.length == 0){
         return;
       } else {
-        int i = 0;
+        int i = 1;
         int sr = 0; 
         int er = n;
         int sc = 0;
         int ec = m;
         
-        while(i < n * m){    
+        while(i <= n * m){    
             //upper column movement
             for(int r = sc; r < ec; r++){
                 System.out.print(matrix[sr][r]+" ");
@@ -55,7 +55,6 @@ public class PrintSpiral {
                 i++;
             }
             sc++;
-            
         }
       }
 
