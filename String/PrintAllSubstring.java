@@ -11,7 +11,9 @@ public class PrintAllSubstring {
         String str = s.next();
         s.close();
         for(int i = 0; i <= str.length(); i++){
-            System.out.println(str.substring(i));
+            for(int j = i+1; j <= str.length(); j++){
+                System.out.println(str.substring(i,j));
+            }
         }
 
     }
