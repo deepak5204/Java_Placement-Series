@@ -25,6 +25,7 @@ public class RemoveCharacter {
         char ch = s.next().charAt(0);
         s.close();
 
+        // //remove character using extra string
         // rmvChar(str, ch);
         // int j = 0;
         for(int i = 0; i < str.length(); i++){
