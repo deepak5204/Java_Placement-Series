@@ -16,7 +16,6 @@ public class CheckPalindrome {
         String newStr = str.substring(1, str.length() - 1);
         // remaining work done by recursion
         return isPalindrome(newStr);
-
     }
 
     public static void main(String[] args) {
