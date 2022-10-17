@@ -15,11 +15,11 @@ public class GeometricSum {
         if(k == 0){
             return 1 ;
         }
-        // double sum = 1/Math.pow(2, k) + calcGeomatricSum(k - 1);
-        double sum = 1/calcPower(2, k) + calcGeomatricSum(k - 1);
-        return sum;
-        
-        
+       
+        //do small work i calculate only (1/2^k)
+        double sum = 1/calcPower(2, k);
+        //remaining sum calculate recursion and add in small work
+        return sum + calcGeomatricSum(k - 1);
     }
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
