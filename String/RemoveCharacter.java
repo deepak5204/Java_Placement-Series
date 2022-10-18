@@ -27,10 +27,12 @@ public class RemoveCharacter {
 
         // //remove character using extra string
         // rmvChar(str, ch);
-        // int j = 0;
+
+        char[] chArr = str.toCharArray();
+
         for(int i = 0; i < str.length(); i++){
             if(str.charAt(i) != ch){
-                // str = str.replace(j, j+1, str.charAt(i));
+               
             }
         }
 
