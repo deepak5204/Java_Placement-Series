@@ -15,28 +15,28 @@ public class FindDuplicate {
         s.close();
 
         //by sorting the array
-        // Arrays.sort(arr);
-        // for(int i = 1; i < arr.length; i++){
-        //     if(arr[i-1] == arr[i]){
-        //         System.out.println(arr[i]);
-        //         return;
-        //     }
-        // }
-
-        //total sum of array 
-        int sum = 0;
-        for(int i = 0; i < arr.length; i++){
-            sum+=arr[i];
+        Arrays.sort(arr);
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i-1] == arr[i]){
+                System.out.println(arr[i]);
+                return;
+            }
         }
 
-        // sum of n-1 element
-        int nm1Sum = 0;
+    //     //total sum of array 
+    //     int sum = 0;
+    //     for(int i = 0; i < arr.length; i++){
+    //         sum+=arr[i];
+    //     }
+
+    //     // sum of n-1 element
+    //     int nm1Sum = 0;
    
-            nm1Sum = (arr.length - 2 * arr.length -1) / 2 ;
+    //         nm1Sum = (arr.length - 2 * arr.length -1) / 2 ;
    
 
-    //duplicate element is 
-    System.out.println(sum - nm1Sum);
+    // //duplicate element is 
+    // System.out.println(sum - nm1Sum);
 
      }
     
