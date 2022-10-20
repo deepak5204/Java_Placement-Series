@@ -1,6 +1,32 @@
 package Array;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class TripletSum {
+
+    //Improved Triplet sum for only unique element array elements
+    public static int ImpTripletSum(int[] arr, int x){
+
+        Arrays.sort(arr);
+        int i = 0; int j = 1; int k = arr.length - 1;
+        int no_of_tsum = 0;
+        while(j < k){
+            if(arr[i]+arr[j]+arr[k]==x){
+                no_of_tsum++;
+                i++; j++; k--;
+            }
+            else if(arr[i]+arr[j]+arr[k] < x){
+                i++;
+                j++;
+            }
+            else{
+                k--;
+            }
+        }
+
+        return no_of_tsum;
+    }
     public static int tripletSum(int[] arr, int x){
        int num_of_tripletSum = 0;
        
@@ -31,10 +57,23 @@ public class TripletSum {
        return num_of_tripletSum;
     }
     public static void main(String[] args){
-        int[] arr = {1,3,6,2,5,4,3,2,4};
-        int num = 12;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter array size");
+        int [] arr = new int[s.nextInt()];
 
-        int res = tripletSum(arr, num);
+        System.out.println("Enter array elements");
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = s.nextInt();
+        }
+
+        System.out.println("Enter the sum value");
+        int sum = s.nextInt();
+        s.close();
+
+        // int res = tripletSum(arr, sum);
+
+        //improvede triplet sum
+        int res = ImpTripletSum(arr, sum);
         System.out.println("Number of triplet sum = "+res);
     }
 }
