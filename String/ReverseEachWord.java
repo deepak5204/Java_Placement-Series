@@ -18,7 +18,7 @@ public class ReverseEachWord {
                 for (int j = currentWordStart; j <= currentWordEnd; j++) {
                     reversedWord = str.charAt(j) + reversedWord;
                 }
-                ans += reversedWord + " ";
+                ans = reversedWord + " " + ans + " ";
                 currentWordStart = i + 1;
             }
         }
@@ -28,7 +28,7 @@ public class ReverseEachWord {
                 for (int j = currentWordStart; j <= currentWordEnd; j++) {
                     reversedWord = str.charAt(j) + reversedWord;
                 }
-                ans += reversedWord + " ";
+                ans = reversedWord + " " + ans + " ";
         return ans;
 
     }
