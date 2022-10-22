@@ -1,5 +1,6 @@
 package Recursion;
 
+import java.util.Scanner;
 
 public class ImprovedMergeSort {
     public static void conquer(int[] arr, int si, int mid, int ei){
@@ -42,7 +43,16 @@ public class ImprovedMergeSort {
 
     } 
     public static void main(String[] args){
-    int [] arr ={3,5,2,8,6,9,4,1};
+        Scanner s = new Scanner(System.in);
+
+        // take array input
+        System.out.println("Enter array size");
+        int [] arr = new int[s.nextInt()];
+        System.out.println("Enter array elements");
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = s.nextInt();
+        }
+        s.close();
     divide(arr,0,arr.length-1);
     //print sorted array
     for(int i = 0; i<arr.length; i++){
