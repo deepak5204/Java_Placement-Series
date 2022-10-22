@@ -10,8 +10,8 @@ public class CountZero {
         if(n%10==0){
             count++;
         }
-        n = n/10;
-        return no_of_0(n, count);
+
+       return no_of_0(n/10, count);
     }
          
     public static void main(String[] args){
