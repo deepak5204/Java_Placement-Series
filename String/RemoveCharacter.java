@@ -28,7 +28,7 @@ public class RemoveCharacter {
         // //remove character using extra string
         // rmvChar(str, ch);
 
-        char[] chArr = str.toCharArray();
+        // char[] chArr = str.toCharArray();
 
         for(int i = 0; i < str.length(); i++){
             if(str.charAt(i) != ch){
