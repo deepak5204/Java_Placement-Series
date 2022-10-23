@@ -25,7 +25,6 @@ public class StringToIntegerConversion {
         int y = stringToInt(str.substring(0, str.length()-1) );
 
         y = y * 10;
-        System.out.println("y="+y);
         int x = str.charAt(str.length() - 1) - '0';
         return x + y;
     }
