@@ -16,10 +16,10 @@ public class GeometricSum {
             return 1 ;
         }
        
-        //do small work i calculate only (1/2^k)
-        double sum = 1/calcPower(2, k);
-        //remaining sum calculate recursion and add in small work
-        return sum + calcGeomatricSum(k - 1);
+        // smallSum calculate recursion 
+        double Smallsum = calcGeomatricSum(k - 1);
+        //do small work calculate only (1/2^k) and add into smallSum
+        return  1/calcPower(2, k) + Smallsum;
     }
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
