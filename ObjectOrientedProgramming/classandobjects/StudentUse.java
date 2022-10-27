@@ -8,8 +8,11 @@ public class StudentUse {
         System.out.println(s1.numStudent);
         System.out.println(s2.numStudent);
         Student s3 = new Student();
-        System.out.println(Student.numStudent);
-        s3.print();
+        System.out.println(Student.getNumStudent());
+
+
+        // s3.print();
+
 
 
 
