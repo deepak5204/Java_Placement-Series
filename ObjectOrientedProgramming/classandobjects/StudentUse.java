@@ -5,6 +5,7 @@ public class StudentUse {
         Student s1 = new Student();
         
         s1.setRollNumber(100);
+        // System.out.println("s1 = "+ s1);
         // System.out.println(s1.name +" "+ s1.getRollNumber());
         System.out.println("s1 " + s1);
         

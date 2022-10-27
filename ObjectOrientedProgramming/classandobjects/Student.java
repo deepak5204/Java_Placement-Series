@@ -13,7 +13,8 @@ public class Student {
             return;
         }
 
-        System.out.println("this " +this);
+        System.out.println("this = "+ this);
+        // System.out.println("this " +this);
         // here this is reference to current object on which it is called 
         this.roll_no = roll_no;
     }
