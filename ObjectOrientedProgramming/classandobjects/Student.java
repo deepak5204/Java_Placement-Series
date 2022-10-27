@@ -2,7 +2,10 @@ package ObjectOrientedProgramming.classandobjects;
 
 public class Student {
     String name;
-    private    int roll_no;
+    private int roll_no;
+    double cgpa;
+    // We can not modify it further
+    final double conversionFActor = 0.95;
     
     public int getRollNumber(){
         return roll_no;
