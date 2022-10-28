@@ -3,11 +3,12 @@ package ObjectOrientedProgramming.classandobjects;
 public class StudentUse {
     public static void main(String[] args){
         Student s1 = new Student("Tonny");
-        Student s2 = new Student("john");
-
-        System.out.println(s1.numStudent);
-        System.out.println(s2.numStudent);
-        Student s3 = new Student();
+        Student s2 = new Student("john");   
+        s2.print();
+        s1.print();
+        // System.out.println(s1.numStudent);
+        // System.out.println(s2.numStudent);
+        // Student s3 = new Student();
         System.out.println(Student.getNumStudent());
 
 
