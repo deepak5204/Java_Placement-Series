@@ -25,7 +25,7 @@ public class DynamicArrayUse {
         System.out.println(da.size());
         // add value in middle of the Array
         da.addInMid(2, 100);
-        da.addInMid(2, 100);
+        da.addInMid(2, 120);
         
         // get size of DA
         // da.add(70);
@@ -33,8 +33,20 @@ public class DynamicArrayUse {
 
 
         //set value on index
-        da.setValue(2, 8);
+        // da.setValue(2, 8);
         // System.out.println(da.getValue(2));
+
+        //remove element
+        da.remove();
+        System.out.println(da.size());
+
+
+        da.print();
+
+        // remove from index
+        da.removeIndexElts(2);
+
+        da.print();
         
     }
 }
