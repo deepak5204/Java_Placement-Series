@@ -2,7 +2,9 @@ package ObjectOrientedProgramming.inheritance;
 
 public class Vehicle {
     private String color;
-    int maxSpeed;
+    // protected int maxSpeed;
+    public int maxSpeed;
+
 
     public String getColor(){
         return color;
