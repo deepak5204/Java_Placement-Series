@@ -4,8 +4,9 @@ package ObjectOrientedProgramming.inheritance;
 public class Car extends Vehicle{
 
     int door;
-    // this.door = door;
-    public void printCar(){
+
+    // here print() override the print() of Vehicle class
+    public void print(){
         System.out.println("Car color "  + getColor()+ " maxSpeed "+ maxSpeed+ " no of doors " + door);
     }
 }

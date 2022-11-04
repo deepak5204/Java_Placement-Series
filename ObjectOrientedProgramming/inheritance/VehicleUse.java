@@ -12,7 +12,8 @@ public static void main(String[] args){
     c.setColor("black");
     c.maxSpeed = 250;
     c.door = 4;
-    c.printCar();
+    // c.printCar();
+    c.print();
 
     Bicycle b = new Bicycle();
     b.setColor("white");
