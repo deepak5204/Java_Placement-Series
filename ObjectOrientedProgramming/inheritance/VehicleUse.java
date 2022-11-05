@@ -3,10 +3,12 @@ package ObjectOrientedProgramming.inheritance;
 public class VehicleUse {
 public static void main(String[] args){
 
-    // Vehicle v = new Vehicle(); // it call default vehicle's constructor
+    Vehicle v; // this is creating reference only
 
-    Car c = new Car(6, 140); //first call default vehicle's constructor then call default car's constructor
-    c.print();
+    // // Vehicle v = new Vehicle(); // it call default vehicle's constructor
+
+    // Car c = new Car(6, 140); //first call default vehicle's constructor then call default car's constructor
+    // c.print();
 
 
 
