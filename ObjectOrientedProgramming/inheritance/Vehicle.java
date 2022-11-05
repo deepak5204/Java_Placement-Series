@@ -6,6 +6,21 @@ public class Vehicle {
     public int maxSpeed;
 
 
+    // default constructor available till we don't create our own constructor
+    // public Vehicle(){
+    //     System.out.println("Vehicle's constructor");
+    // }
+
+    public Vehicle(int maxSpeed){
+        System.out.println("Vehicle's constructor");
+        this.maxSpeed = maxSpeed;
+    }
+
+    //default constructor
+    public Vehicle() {
+        System.out.println("Vehicle's constructor");
+    }
+
     public String getColor(){
         return color;
     }
