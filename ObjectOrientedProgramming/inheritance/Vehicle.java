@@ -36,5 +36,7 @@ public abstract class Vehicle {
 
     //abstract keyword
     public abstract boolean isMotorized();
+
+    public abstract String getCompany();
     
 }

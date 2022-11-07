@@ -5,14 +5,23 @@ import java.util.Scanner;
 public class VehicleUse {
 public static void main(String[] args){
 
+    
+
+    // Vehicle v;
+    // Car c = new Car(4, 100);
+    // v = new Car(6, 200);
+    // v = new Bicycle();
+    // v.print();
+    // System.out.println(v.isMotorized());
+
     /* 
      ***** in java Object is super class of all class *****
      */
 
     // typecasting tke plave it may risky
-    Vehicle v = new Car(4, 200);
-    Car c = (Car) v;
-    c.numDoors = 4;
+    // Vehicle v = new Car(4, 200);
+    // Car c = (Car) v;
+    // c.numDoors = 4;
 
     // polymorphism :- one thing that is capable of taking multiple forms
 

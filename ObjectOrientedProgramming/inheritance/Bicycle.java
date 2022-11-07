@@ -1,7 +1,7 @@
 package ObjectOrientedProgramming.inheritance;
 
 //Bicycle is inheriting property from vehicle
-public class Bicycle extends Vehicle{
+public abstract class Bicycle extends Vehicle{
     
     public Bicycle(){
         /* 
