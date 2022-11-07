@@ -14,5 +14,10 @@ public class Bicycle extends Vehicle{
     public void printBicycle(){
         System.out.println("Bicycle color "  + getColor()+ " maxSpeed "+ maxSpeed);
     }
+
+      //complete abstract method
+      public boolean isMotorized(){
+        return false;
+    }
    
 }

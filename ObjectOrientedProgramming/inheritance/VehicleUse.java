@@ -5,20 +5,29 @@ import java.util.Scanner;
 public class VehicleUse {
 public static void main(String[] args){
 
+    /* 
+     ***** in java Object is super class of all class *****
+     */
+
+    // typecasting tke plave it may risky
+    Vehicle v = new Car(4, 200);
+    Car c = (Car) v;
+    c.numDoors = 4;
+
     // polymorphism :- one thing that is capable of taking multiple forms
 
-    Vehicle v; // this is creating reference of vehicle only
+    // Vehicle v; // this is creating reference of vehicle only
     
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+    // int n = sc.nextInt();
     sc.close();
-    if(n < 10){
-        v = new Car(4, 100);
-    } else {
-        v = new Vehicle();
-    }
+    // if(n < 10){
+    //     v = new Car(4, 100);
+    // } else {
+    //     v = new Vehicle();
+    // }
 
-    v.print();
+    // v.print();
 
     // Car c = new Vehicle(); we cannot do because every vehicle is not a car
 

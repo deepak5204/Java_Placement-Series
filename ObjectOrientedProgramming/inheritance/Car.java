@@ -28,4 +28,10 @@ public class Car extends Vehicle{
         // super.maxSpeed = 100; //set maxSpeed to vechile
         System.out.println(maxSpeed + " "+ super.maxSpeed);
     }
+
+
+    //complete abstract method
+    public boolean isMotorized(){
+        return true;
+    }
 }

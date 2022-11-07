@@ -1,6 +1,6 @@
 package ObjectOrientedProgramming.inheritance;
 
-public class Vehicle {
+public abstract class Vehicle {
     private String color;
     // protected int maxSpeed;
     public int maxSpeed;
@@ -32,5 +32,9 @@ public class Vehicle {
     public void print(){
         System.out.println("Vehicle color "  + color + " maxSpeed "+ maxSpeed);
     }
+
+
+    //abstract keyword
+    public abstract boolean isMotorized();
     
 }
