@@ -2,7 +2,7 @@ package ObjectOrientedProgramming.inheritance_temp;
 
 import ObjectOrientedProgramming.inheritance.Vehicle;
 
-public class Truck extends Vehicle{
+public abstract class Truck extends Vehicle{
     int maxLoadingCapacity;
 
     public void print(){
