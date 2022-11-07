@@ -9,4 +9,9 @@ public class Truck extends Vehicle{
         System.out.println("Vehicle color "  + getColor() + " maxSpeed "+ maxSpeed + " maxLoadingCapacity " + maxLoadingCapacity);
     }
 
+      //complete abstract method
+      public boolean isMotorized(){
+        return true;
+    }
+
 }
