@@ -8,16 +8,28 @@ public class IsLeapYear {
         System.out.println("Enter year: ");
         int year = sc.nextInt();
         sc.close();
-        if(year % 4 == 0){
-            if(year % 100 != 0){
-                System.out.println("Leap Year");
-            } else if(year % 400 == 0){
-                System.out.println("Leap Year");
-            } else{
-                System.out.println("Not Leap Year");
-            }
+
+        boolean x = ((year % 4) == 0);
+        boolean y = ((year % 100) != 0);
+        boolean z = ((year % 400) == 0);
+
+        if(x && (y || z)){
+            System.out.println("Leap Year");
         } else {
             System.out.println("Not Leap Year");
         }
+
+
+        // if(year % 4 == 0){
+        //     if(year % 100 != 0){
+        //         System.out.println("Leap Year");
+        //     } else if(year % 400 == 0){
+        //         System.out.println("Leap Year");
+        //     } else{
+        //         System.out.println("Not Leap Year");
+        //     }
+        // } else {
+        //     System.out.println("Not Leap Year");
+        // }
     }
 }
