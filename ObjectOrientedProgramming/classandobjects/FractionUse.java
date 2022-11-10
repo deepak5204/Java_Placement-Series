@@ -7,6 +7,12 @@ public class FractionUse {
     f1.print();
     
     Fraction f2 = new Fraction(4, 3);
+    try {
+      f2.setDenominator(0);
+   } catch (nonZeroDenominator e) {
+      System.out.println("Denominator must not be zero");
+      e.printStackTrace();
+   }
       f2.print();
       // f1.add(f2);
       // f1.print();

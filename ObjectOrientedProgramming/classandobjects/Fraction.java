@@ -1,5 +1,10 @@
 package ObjectOrientedProgramming.classandobjects;
 
+// import ObjectOrientedProgramming.ExceptionHandling.ExceptionDemo;
+class nonZeroDenominator extends Exception{
+
+}
+
 public class Fraction {
     int numerator;
     int denominator;
@@ -21,10 +26,10 @@ public class Fraction {
         return numerator;
     }
 
-    public void setDenominator(int num){
-        if(num == 0){
-            return;
-        }   
+    public void setDenominator(int num) throws nonZeroDenominator{
+            if(num == 0){
+                throw new nonZeroDenominator();
+            }
 
         this.denominator = num;
         simplify();
