@@ -19,6 +19,16 @@ public class LinkedListUse {
         return n1;   
     }
 
+    //incement every node element in linkedlist
+    public static void increment(Node<Integer> head){
+        Node<Integer> temp = head;
+
+        while(temp != null){
+            temp.data++;
+            temp = temp.next;
+        }
+    }
+
     //print linked list
     public static void print(Node<Integer> head) {
 
@@ -29,10 +39,26 @@ public class LinkedListUse {
         }
         
     }
+
+    // Calculate length
+    public static int calcLength(Node<Integer> head) {
+        //here temp create reference only 
+        Node<Integer> temp = head;
+        int count = 0;
+        while(temp != null){
+            count += 1;
+            temp = temp.next;
+        }
+
+        return count;
+    }
     public static void main(String[] args) {
 
         Node<Integer> head = createLinkedList();
+        increment(head);
         print(head);
+        int LL = calcLength(head);
+        System.out.println("Linkedlist length : "+LL);
         // System.out.println(n1.data);
         // System.out.println(n1.next);
     }
