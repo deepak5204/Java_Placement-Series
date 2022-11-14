@@ -52,6 +52,20 @@ public class LinkedListUse {
 
         return count;
     }
+
+    //Print ith node
+    public static void print_ithNode(Node<Integer> head, int i) {
+        Node<Integer> temp = head;
+        int c = 0;
+        while(temp != null){
+            c++;
+            if(c == i){
+                System.out.println(temp.data);
+            }
+            temp = temp.next;
+        }
+    }
+
     public static void main(String[] args) {
 
         Node<Integer> head = createLinkedList();
@@ -59,6 +73,7 @@ public class LinkedListUse {
         print(head);
         int LL = calcLength(head);
         System.out.println("Linkedlist length : "+LL);
+        print_ithNode(head, 2);
         // System.out.println(n1.data);
         // System.out.println(n1.next);
     }
