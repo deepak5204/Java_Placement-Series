@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.Scanner;
+
 public class LinkedListUse {
 
     public static Node<Integer> createLinkedList() {
@@ -34,7 +36,7 @@ public class LinkedListUse {
 
         Node<Integer> temp = head;
         while(temp != null){
-            System.out.println(temp.data);
+            System.out.print(temp.data+" ");
             temp = temp.next ;
         }
         
@@ -66,14 +68,41 @@ public class LinkedListUse {
         }
     }
 
+    //take input in linked list
+    public static Node<Integer> takeInput() {
+        Scanner sc = new Scanner(System.in);
+        int data = sc.nextInt();
+        Node<Integer> head = null;
+        Node<Integer> tail = null;
+        while(data != -1){
+            Node<Integer> currNode = new Node<Integer>(data);
+            if(head == null){
+                head = currNode;
+                tail = head;
+                
+            } else{
+                // Node<Integer> tail = head;
+                // while(tail.next != null){
+                    // tail = tail.next;
+                // }
+                tail.next = currNode;
+                tail = tail.next;
+            }
+            data = sc.nextInt();
+        }
+        sc.close();
+        return head;
+    }
+
     public static void main(String[] args) {
 
-        Node<Integer> head = createLinkedList();
-        increment(head);
+        // Node<Integer> head = createLinkedList();
+        Node<Integer> head = takeInput();
+        // increment(head);
         print(head);
-        int LL = calcLength(head);
-        System.out.println("Linkedlist length : "+LL);
-        print_ithNode(head, 2);
+        // int LL = calcLength(head);
+        // System.out.println("Linkedlist length : "+LL);
+        // print_ithNode(head, 2);
         // System.out.println(n1.data);
         // System.out.println(n1.next);
     }
