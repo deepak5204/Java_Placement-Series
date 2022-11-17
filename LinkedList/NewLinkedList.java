@@ -7,11 +7,15 @@ public class NewLinkedList {
     // delete node at ith position
     public static NewNode<Integer> deleteAt_ithNode(NewNode<Integer> head, int pos) {
         NewNode<Integer> temp = head;
+        int len = calculateLength(head);
+       if(pos > len){
+        return head;
+       } else {
         if (pos == 0 && temp.next == null) {
             head = null;
             System.out.println("There is no Node in LinkedList. ");
             return head;
-        } else if(pos == 0 && temp.next != null){
+        } else if(pos == 0){
             head = temp.next;
             return head;
         }
@@ -28,6 +32,7 @@ public class NewLinkedList {
             }
         }
        return head;
+       }
     }
 
     // insert at ith node
@@ -74,7 +79,7 @@ public class NewLinkedList {
     }
 
     // calculate length
-    public static void calculateLength(NewNode<Integer> head) {
+    public static int calculateLength(NewNode<Integer> head) {
         int len = 0;
         NewNode<Integer> temp = head;
 
@@ -82,7 +87,8 @@ public class NewLinkedList {
             len++;
             temp = temp.next;
         }
-        System.out.println("\n linked length : " + len);
+        return len;
+        // System.out.println("\n linked length : " + len);
     }
 
     // take input in linked list
@@ -126,7 +132,7 @@ public class NewLinkedList {
         // print_ith_node(head, 2);
         // insert(head, 80);
         // head = insertAt_ithNode(head, 80, 0);
-        head = deleteAt_ithNode(head, 0);
+        head = deleteAt_ithNode(head, 6);
         print(head);
 
     }
